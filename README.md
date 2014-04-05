@@ -7,7 +7,7 @@ Este material tem como objetivo suportar o conteúdo do livro [An Introduction t
 
 Assim, é possível obter códigos e resumos conforme: 
 
-- Introdução
+- [Introdução](https://github.com/hudsonchaves/EconometriaIII/tree/master/Capitulos/Introducao)
 - Capítulo 1
 - Capítulo 2
 - Capítulo 3
