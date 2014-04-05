@@ -91,8 +91,57 @@ Box.test(res, lag=15, type="Ljung") # falhou (resíduos são autocorrelacionados
 sapply(1:20,function(1){Box.test(res,lag=l, type="Ljung-Box")$p.value})
 
 
+########
+###   STOCHASTIC LEVEL
+########
 
-# 
+# Para ajustar um stochastic level, existem vários pacotes do R que podem ser utilizados. Aqui, o autor utiliza o dlm para estimar
+# os parâmetros do modelo. 
+
+fn = function(params){
+  dlmModPoly(order=1, dv=exp(params[1]), dW=exp(params[2]))
+}
+y = c(data.1)
+fit = dlmMLE(y, rep(0,2),fn)
+mod = fn(fit$par)
+obs.error.var = V(mod)
+state.error.var = W(mod)
+mu.1 = dropFirst(dlmFilter(y,mod)$m)[1]
+res = residuals(dlmFilter(y,mod),sd=F)
+filtered = dlmFilter(y,mod)
+smoothed = dlmSmooth(filtered)
+mu = dropFirst(smoothed$s)
+mu.1 = mu[1]
+
+
+par(mfrow=c(1,1))
+plot.ts(y, col = "darkgrey", xlab="",ylab = "log KSI",pch=3,cex=0.5,
+          cex.lab=0.8,cex.axis=0.7,xlim=c(0,200))
+lines(mu , col = "blue", lwd = 2, lty=2)
+legend("topright",leg = c("log UK drivers KSI"," stochastic level"),
+         cex = 0.6,lty = c(1, 2), col = c("darkgrey","blue"),
+         pch=c(3,NA), bty = "y", horiz = T)
+
+par(mfrow=c(1,1))
+plot.ts(res,ylab="",xlab="", col = "darkgrey", main = "",cex.main = 0.8)
+abline(h=0)
+
+
+##### DIAGNÓSTICO
+
+# Teste de Normalidade
+
+shapiro.test(res) # falhou
+
+# Teste de Independência
+
+Box.test(res, lag=15, type="Ljung") # falhou
+
+
+
+
+
+
 
 
 
