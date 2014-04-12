@@ -20,3 +20,4 @@ $
 \dot{z} & = -\beta z + xy
 \end{aligned}
 $
+$z=\sqrt{x^2+y^2}$
