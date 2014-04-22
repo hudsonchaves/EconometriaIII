@@ -6,6 +6,8 @@ No método clássico de regressão uma relação linear é assumida entre uma va
 
 assumindo que os erros ou resíduos são normalmente e independentemente distribuídos com média zero e variância igual a. O modelo de regressão tem três coeficientes desconhecidos que podem ser estimados pelo método de mínimos quadrados. 
 
+Suponha que a variável dependente representa o log do número mensal de condutores mortos ou gravemente feridos (KSI) no Reino Unido (UK) no período de Janeiro de 1969 a Dezembro de 1984 (192 observações). Além disso, suponha que a variável independente seja uma sequencia que representa o índice temporal da série (1 a 192). 
+
 ```s
 library(knitr)
 ?knit
