@@ -4,6 +4,8 @@ No método clássico de regressão uma relação linear é assumida entre uma va
 
 ![equation](http://www.sciweavers.org/tex2img.php?eq=%20y_%7Bi%7D%20%20%3D%20a%20%2Bbx_%7Bi%7D%2B%20%5Cvarepsilon_%7Bi%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
+assumindo que os erros ou resíduos são normalmente e independentemente distribuídos com média zero e variância igual a. O modelo de regressão tem três coeficientes desconhecidos que podem ser estimados pelo método de mínimos quadrados. 
+
 ```s
 library(knitr)
 ?knit
