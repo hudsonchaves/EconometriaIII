@@ -21,3 +21,7 @@ Por meio do gráfico do log de KSI contra o tempo juntamente com a linha de regr
 Contudo, uma hipótese importante do modelo clássico de regressão linear não é considerado, pois as observações *y* depois de corrigidas pelo intercepto e a variável exógena *x* são assumidas serem independentes uma das outras. No presente exemplo essas observações não são independentes, pois estão relacionadas ao longo do tempo dado o padrão sistemático na série. Os resíduos deveriam ser aleatoriamente distribuídos.
 
 Uma ferramenta útil para investigar a aleatoriedade de um conjunto de observações é o correlograma que é um gráfico contendo correlações entre uma série observada e a mesma série defasada *k* pontos. Dado que as correlações são computadas entre uma variável e ela mesma, chamamos de autocorrelação.
+
+O correlograma dos resíduos de uma série independentemente distribuída é formado de zeros. A independência entre os resíduos normalmente distribuídos é refletida do fato de que todas as autocorrelações são próximas a zero e não excedem o intervalo de confiança. 
+
+Em contraste, o correlograma dos resíduos do ajuste do log de KSI contra a variável temporal mostra uma grande quantidade de autocorrelações significativamente diferentes de zero. 
