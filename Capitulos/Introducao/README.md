@@ -30,3 +30,5 @@ Em princípio não há nada de errado em ajustar um modelo clássico de regress�
 
 Quando a autocorrelação de lag 1 dos resíduos é positiva e significativamente diferente de zero, um resíduo positivo tende a ser seguido por um ou mais outros resíduos positivos e um resíduo negativo tende a ser seguido por um ou mais outros resíduos negativos. Assim, a variância do erro usada por testes estatísticos é seriamente subestimada neste caso. Isso por sua vez conduz a uma superestimação de F ou t e portanto, conclusões excessivamente otimistas sobre a relação linear entre a variável dependente e o tempo. 
 
+Por outro lado, quando a autocorrelação de lag 1 dos resíduos é negativa e significativamente diferente de zero, então um resíduo positivo tende a ser seguido por um resíduo negativo e virse-versa. Neste caso a variância do erro para os testes estatísticos padrões é seriamente superestimada, conduzindo a subestimação de F e t. Portanto, conclusões excessivamente pessimistas sobre a relação linear entre a variável dependente e o tempo são feitas. 
+
