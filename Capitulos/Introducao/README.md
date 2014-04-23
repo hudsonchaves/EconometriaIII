@@ -28,4 +28,5 @@ Em contraste, o correlograma dos resíduos do ajuste do log de KSI contra a vari
 
 Em princípio não há nada de errado em ajustar um modelo clássico de regressão aos dados para obter uma ideia aproximada da tendência linear na série. Os testes F e t são baseados sobre a hipótese de que os erros são aleatoriamente distribuídos, uma hipótese que é claramente violada neste caso.
 
+Quando a autocorrelação de lag 1 dos resíduos é positiva e significativamente diferente de zero, um resíduo positivo tende a ser seguido por um ou mais outros resíduos positivos e um resíduo negativo tende a ser seguido por um ou mais outros resíduos negativos. Assim, a variância do erro usada por testes estatísticos é seriamente subestimada neste caso. Isso por sua vez conduz a uma superestimação de F ou t e portanto, conclusões excessivamente otimistas sobre a relação linear entre a variável dependente e o tempo. 
 
