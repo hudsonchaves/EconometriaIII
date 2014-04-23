@@ -25,3 +25,7 @@ Uma ferramenta útil para investigar a aleatoriedade de um conjunto de observaç
 O correlograma dos resíduos de uma série independentemente distribuída é formado de zeros. A independência entre os resíduos normalmente distribuídos é refletida do fato de que todas as autocorrelações são próximas a zero e não excedem o intervalo de confiança. 
 
 Em contraste, o correlograma dos resíduos do ajuste do log de KSI contra a variável temporal mostra uma grande quantidade de autocorrelações significativamente diferentes de zero. 
+
+Em princípio não há nada de errado em ajustar um modelo clássico de regressão aos dados para obter uma ideia aproximada da tendência linear na série. Os testes F e t são baseados sobre a hipótese de que os erros são aleatoriamente distribuídos, uma hipótese que é claramente violada neste caso.
+
+
