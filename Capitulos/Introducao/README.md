@@ -6,10 +6,13 @@ No método clássico de regressão uma relação linear é assumida entre uma va
 
 O modelo de regressão pode estimar os parâmetros desconhecidos pelo método de mínimos quadrados. 
 
-Suponha que a variável dependente representa o log do número mensal de condutores mortos ou gravemente feridos (KSI) no Reino Unido (UK) no período de Janeiro de 1969 a Dezembro de 1984 (192 observações). Além disso, suponha que a variável independente seja uma sequencia que representa o índice temporal da série (1 a 192). O código [R Code](https://github.com/hudsonchaves/EconometriaIII/blob/master/rcode.R) permite gerar o gráfico da série temporal, estimar os parâmetros da equação, avaliar os resíduos ao longo do tempo e diagnósticos do ajuste.
+Suponha que a variável dependente representa o log do número mensal de condutores mortos ou gravemente feridos (KSI) no Reino Unido (UK) no período de Janeiro de 1969 a Dezembro de 1984 (192 observações). Além disso, suponha que a variável independente seja uma sequencia de 1 a 192 (índice temporal da série). [R Code](https://github.com/hudsonchaves/EconometriaIII/blob/master/rcode.R) permite gerar o gráfico da série temporal, estimar os parâmetros da equação, avaliar os resíduos ao longo do tempo e diagnósticos do ajuste. Abaixo, o código que permite obter a base de dados:
 
 ```s
-library(knitr)
-?knit
-knit(input)
+# data(package =.packages(all.available = TRUE)) # descobrir os bancos de dados do R
+base = data.frame(UKDriverDeaths) # transformar em data frame o banco que quero
+base = log(base) # logaritmo da série
+colnames(base) = "logKSI" # renomear a coluna
+head(base) # ver as primeiras observações da série
+t = 1:dim(base)[1] # índice temporal da série
 ```
