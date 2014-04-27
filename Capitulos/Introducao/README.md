@@ -32,3 +32,15 @@ Quando a autocorrelação de lag 1 dos resíduos é positiva e significativament
 
 Por outro lado, quando a autocorrelação de lag 1 dos resíduos é negativa e significativamente diferente de zero, então um resíduo positivo tende a ser seguido por um resíduo negativo e virse-versa. Neste caso a variância do erro para os testes estatísticos padrões é seriamente superestimada, conduzindo a subestimação de F e t. Portanto, conclusões excessivamente pessimistas sobre a relação linear entre a variável dependente e o tempo são feitas. 
 
+Supõe-se que propriedades dinâmicas não podem ser observadas diretamente dos dados. O processo dinâmico não observado no tempo *t* é conhecido como *estado* da série temporal. O estado de uma série temporal pode consistir de vários componentes, que são introduzidos um a um nos capítulos seguintes do livro. 
+
+Nos capítulos 2, 3 e 4 os componentes apresentados são adequados para obter uma adequada descrição de uma série temporal. Esses componentes são: nível, inclinção e sazonalidade.
+
+Nos capítulos 5 e 6 os componentes discutidos são úteis para encontrar explicações para o desenvolvimento subjacente da série. Esses componentes são variáveis explicativas e de intervenção. 
+
+O capítulo 7 apresenta análises onde componentes descritivos e explicativos são combinados em um único modelo. 
+
+Uma terceira e importante aplicação da análise de séries temporais é a habilidade para fazer previsões. Este aspecto é discutido no capítulo 8 que também apresenta uma notação geral para modelos de estado espaço univariados e maneiras alternativas de lidar com variáveis explicativas e de intervenção. Além disso, intervalos de confiança, estados ajustados, erros de previsão um passo à frente e suas variâncias, testes de diagnóstico e o tratamento de *missing observations* em métodos de estado espaço são discutidos neste capítulo. 
+
+O capítulo 9 introduz a análise multivariada de dados de séries temporais. No capítulo 10 uma básica introdução dos modelos ARIMA (Box-Jenkins) é apresentada, permitindo assim, uma avaliação do merito dos modelos ARIMA e Estado Espaço para a análise de séries temporais.
+
