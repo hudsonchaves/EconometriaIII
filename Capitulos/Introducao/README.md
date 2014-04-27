@@ -44,3 +44,4 @@ Uma terceira e importante aplicação da análise de séries temporais é a habi
 
 O capítulo 9 introduz a análise multivariada de dados de séries temporais. No capítulo 10 uma básica introdução dos modelos ARIMA (Box-Jenkins) é apresentada, permitindo assim, uma avaliação do merito dos modelos ARIMA e Estado Espaço para a análise de séries temporais.
 
+Finalmente, no capítulo 11 é mostrado como performar todas as análises discutidas nos capítulos 1 a 9 em *SsfPack* (rotinas em C conectadas ao Ox). 
